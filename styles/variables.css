@@ -1,1 +1,50 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+
+  /* ШРИФТЫ */
+
+  --main-font: 'Inter-Variable';
+  --accent-font: 'PressStart2P-Regular';
+  --logo-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem); /* 49px - 65px */
+  --main-title-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem); /* 14px - 23px*/
+  --basic-font-size: 18px;
+  --secondary-font-size: 14px;
+  --regular-font-wght: 400;
+  --bold-font-wght: 700;
+  --font-color: #000;
+
+  /*---------------------------------------------------*/
+  
+  --border-color: #000;
+  --border: solid 2px var(--border-color);
+  
+  /* ОТСТУПЫ */
+ 
+  --header-margin-block-size: 100px;
+  --header-margin-inline-size: clamp(0rem, -8.1426rem + 34.7418vw, 23.125rem); /* 0 - 370px */
+
+  --basic-margin-inline-size: clamp(0rem, -8.1866rem + 34.9296vw, 23.25rem); /* 0 - 372px */
+  
+  /* внешние отступы заголовка карточки */
+  --list-title-block-start: clamp(0.375rem, 0.397rem + -0.0939vw, 0.3125rem); /* 6px - 5px */
+  --list-title-block-end: clamp(0.25rem, 0.316rem + -0.2817vw, 0.0625rem); 
+  --list-title-inline-start: 10px;
+  --list-title-inline-end: clamp(0.75rem, 0.4419rem + 1.3146vw, 1.625rem); /* 12px - 26px */
+  /*---------------------------------------------------*/
+
+  
+  --header-height: clamp(20.4375rem, 19.5352rem + 3.8498vw, 23rem); /* 327px - 368px */
+
+  --img-size: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem); /* 375px - 696px */
+  
+    
+  /* ФОН */
+  --background-color: #fff;
+  --background-gradient: repeating-linear-gradient(to right, #d3d3d3 0px 2px,
+                         transparent 2px 4px), repeating-linear-gradient(to bottom, #d3d3d3 0px 2px,
+                         transparent 2px 4px), linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+
+  --label-shadow: 1px 1px 0 #fff,
+                  1px -1px 0 #fff,
+                  -1px 1px 0 #fff,
+                  -1px -1px 0 #fff;
+ }
