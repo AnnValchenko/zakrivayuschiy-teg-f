@@ -72,6 +72,8 @@
   display: block;
   inline-size: 100%;
   block-size: auto;
+  object-fit: auto;
+  object-position: center;
 }
 
 .content-label {
@@ -132,4 +134,77 @@
   font-family: var(--accent-font);
   font-size: var(--secondary-font-size);
   line-height: 90%;
+}
+
+.button_save {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  border: var(--border);
+  margin-block-start: clamp(3.25rem, 3.294rem + -0.1878vw, 3.125rem);
+  margin-block-end: clamp(6.25rem, 6.184rem + 0.2817vw, 6.4375rem);
+  margin-inline-start: clamp(2.15625rem, -9.2324rem + 48.5915vw, 34.5rem);
+  margin-inline-end: clamp(2.15625rem, -9.2324rem + 48.5915vw, 34.5rem);
+  padding: 14px 18px;
+  block-size: 80px;
+}
+
+.button_save-text {
+  font-family: var(--accent-font), fantasy;
+  font-size: var(--secondary-font-size);
+  line-height: 90%;
+}
+
+.dialog_box::backdrop {
+  position: fixed;
+  inset: 0px;
+  background-color: var(--dialog-background);
+  opacity: 0.75;
+}
+
+/* ФИЛЬТРЫ */
+
+.contast { 
+  filter: contrast(20%);
+}
+
+.grayscale { 
+  filter: grayscale(0.8);
+}
+
+.saturate { 
+  filter: saturate(200%);
+}
+
+.sepia { 
+  filter: sepia(80%);
+} 
+
+.invert { 
+  filter: invert(0.7);
+}
+
+.opacity { 
+  filter: opacity(0.8);
+}
+
+.blur { 
+  filter: blur(0.3rem);
+}
+
+.mixed-filter {
+  filter: sepia(1) contrast(2) brightness(150%);
+}
+
+
+
+/*---------------------------------------------------*/
+
+@media (min-width: 1440px) {
+  .button_save {
+    flex-direction: row;
+    white-space: nowrap;
+    block-size: 51px;
+  }
 }
