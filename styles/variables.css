@@ -16,6 +16,8 @@
 
   --accent-color: #000;
   
+  --button-hover-text-color: #fff;
+
   --border-color: #000;
   --border: solid 2px var(--border-color);
   
@@ -52,4 +54,14 @@
                   1px -1px 0 #fff,
                   -1px 1px 0 #fff,
                   -1px -1px 0 #fff;
+
+
+   /* СЕРДЦЕ */
+
+  --heart-contur-color: #000;
+  --heart-animation-fill-color: red;
+  --heart-hover-color: #000; 
+  --heart-routine-color: #fff;
+
+   /*---------------------------------------------------*/
  }
