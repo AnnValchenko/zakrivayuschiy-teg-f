@@ -13,11 +13,9 @@
 @keyframes scaling-heart {
   from {
     transform: scale(1);
-    transform-origin: center;
   }
   to {
     transform: scale(1.25);
-    transform-origin: center;
   }
 }
 
@@ -28,4 +26,13 @@
   to {
     opacity: 1;
   }
+}
+
+.like-icon.is-liked .heart {
+  transform-origin: center;
+  animation: scaling-heart 0.3s ease-in;
+}
+
+.like-icon.is-liked .sparks {
+  animation: flash-of-sparks 0.3s 0.3s ease-in;
 }
